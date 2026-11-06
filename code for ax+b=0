@@ -1,0 +1,33 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a, b, x;
+
+    cout << "Enter a: ";
+    cin >> a;
+
+    cout << "Enter b: ";
+    cin >> b;
+
+    if (a != 0)
+    {
+        x = -b / a;
+        cout << "Solution: x = " << x << endl;
+    }
+    else
+    {
+        if (b == 0)
+        {
+            cout << "Infinitely many solutions" << endl;
+        }
+        else
+        {
+            cout << "No solution" << endl;
+        }
+    }
+
+    return 0;
+}
